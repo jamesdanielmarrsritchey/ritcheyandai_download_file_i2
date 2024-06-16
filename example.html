@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Download with Progress Bar and Form</title>
+    <style>
+progress {
+	height: 25px;
+	width: 100%;
+}    
+    </style>
+</head>
+<body>
+    <form id="downloadForm">
+        <label for="fileUrl">File URL:</label>
+        <input type="text" id="fileUrl" name="fileUrl" required>
+        <label for="fileName">File Name:</label>
+        <input type="text" id="fileName" name="fileName" required>
+        <button type="submit">Download File</button>
+    </form>
+    <button id="cancelDownloadBtn" style="display:none;">Cancel Download</button>
+    <progress id="downloadProgress" value="0" max="100" style="width:100%;"></progress>
+
+    <script src="functions.js"></script>
+</body>
+</html>
